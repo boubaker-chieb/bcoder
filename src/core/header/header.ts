@@ -12,6 +12,5 @@ export class Header {
     { label: 'Home', page: '/' },
     { label: 'Contact', page: '/contact' },
     // { label: 'Blog', page: '/blog' },
-    { label: 'Source Code', link: 'https://github.com/boubaker-chieb' },
   ];
 }
