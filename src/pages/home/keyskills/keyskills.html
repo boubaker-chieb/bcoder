@@ -1,0 +1,8 @@
+<div class="skills">
+    @for(skill of skills; track skill.text; let i = $index) {
+        <div class="skill">
+            <img src="/public/svgs/{{skill.icon}}.svg" width="24" height="24">
+            <h4>{{skill.text}}</h4>
+        </div>
+    }
+</div>

@@ -1,0 +1,15 @@
+.contact-link {
+  display: flex;
+  align-items: center;
+  margin: var(--gap-half);
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  img {
+    margin-right: var(--gap-quarter);
+  }
+}

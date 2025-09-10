@@ -1,0 +1,12 @@
+<div class="layout">
+  <app-logo></app-logo>
+  <h1>Contact</h1>
+  <p>If you have any questions or inquiries, feel free to reach out!</p>
+  <div class="links">
+    @for(contact of contacts; track contact.link; let i = $index) {
+        <a href="{{contact.link}}" target="_blank" rel="noopener" class="contact-link">
+            <img src="/public/svgs/{{contact.icon}}.svg" width="50" height="50" alt="{{contact.alt}}">
+        </a>
+    }
+  </div>
+</div>

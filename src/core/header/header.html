@@ -1,0 +1,18 @@
+<header class="header">
+  <nav>
+    <ul>
+      @for (navItem of navItems; track navItem.label) {
+      <li>
+        <a
+          [routerLink]="navItem.page"
+          [routerLinkActiveOptions]="{ exact: true }"
+          [href]="navItem.link"
+          routerLinkActive="active"
+        >
+          {{ navItem.label }}
+        </a>
+      </li>
+      }
+    </ul>
+  </nav>
+</header>
