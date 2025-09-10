@@ -17,12 +17,12 @@
 }
 
 .header :global(a) {
-  color: var(--accents-3);
+  color: var(--accents-1);
   font-weight: 400;
 }
 
 a {
-  color: var(--accents-3);
+  color: var(--accents-1);
   font-weight: 400;
 }
 
@@ -36,3 +36,23 @@ a {
     padding: .5em 0 2em;
   }
 }
+
+
+/* Fixed nav container */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-default);
+    backdrop-filter: blur(18px);
+    transition: background-color .25s, box-shadow .25s;
+    z-index: 1000;
+  }
+
+  nav.scrolled {
+    background: var(--bg-scrolled);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
