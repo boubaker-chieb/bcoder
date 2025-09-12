@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Keyskills } from './keyskills/keyskills';
 import { Intro } from './intro/intro';
-import { Logo } from '../../core/logo/logo';
+import { PageTitle } from '../../core/pageTitle/pageTitle';
 
 @Component({
   selector: 'app-home',
-  imports: [Logo, Keyskills, Intro],
+  imports: [PageTitle, Keyskills, Intro],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })

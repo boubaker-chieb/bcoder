@@ -1,10 +1,10 @@
 .contact-link {
   display: flex;
   align-items: center;
-  margin: var(--gap-half);
+  margin: var(--gap-double);
   text-decoration: none;
   color: inherit;
-
+  
   &:hover {
     opacity: 0.8;
   }

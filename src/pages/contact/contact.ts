@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Logo } from '../../core/logo/logo';
+import { PageTitle } from '../../core/pageTitle/pageTitle';
 
 @Component({
   selector: 'app-contact',
-  imports: [Logo],
+  imports: [PageTitle],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })

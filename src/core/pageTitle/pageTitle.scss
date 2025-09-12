@@ -1,0 +1,16 @@
+.title-container {
+  background: var(--yellow-1);
+  padding-bottom: 2rem;
+  padding-top: 5rem;
+  box-shadow: 0 2px 8px var(--accents-4);
+}
+
+.title {
+  text-align: center;
+  margin: 1rem auto 0 auto; // centers horizontally
+  font-weight: 800;
+  color: var(--bleu-1);
+  max-width: 520px; // set your desired max width
+  width: 100%;
+  display: block;
+}

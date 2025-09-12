@@ -1,8 +1,12 @@
 <div class="skills">
-    @for(skill of skills; track skill.text; let i = $index) {
-        <div class="skill">
-            <img src="/public/svgs/{{skill.icon}}.svg" width="50" height="50">
-            <h4>{{skill.text}}</h4>
-        </div>
-    }
+  @for(skill of skills; track skill.text; let i = $index) {
+  <div class="skill">
+    <i
+      [style.webkitMask]="'url(/public/svgs/' + skill.icon + '.svg) no-repeat center / contain'"
+      [style.mask]="'url(/public/svgs/' + skill.icon + '.svg) no-repeat center / contain'"
+      class="icon"
+    ></i>
+    <h4>{{ skill.text }}</h4>
+  </div>
+  }
 </div>

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal, WritableSignal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { ThemeStore } from '../stores/theme-store';
 
 @Component({
   selector: 'app-header',
@@ -8,9 +9,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './header.scss',
 })
 export class Header {
-  public navItems: { label: string; page?: string; link?: string }[] = [
-    { label: 'Home', page: '/' },
-    { label: 'Contact', page: '/contact' },
-    // { label: 'Blog', page: '/blog' },
+  public navItems: { label: string; page?: string; link?: string; icon?: string }[] = [
+    { label: 'Home', page: '/', icon: '/public/svgs/home-icon.svg' },
+    { label: 'Contact', page: '/contact', icon: '/public/svgs/contact-icon.svg' },
   ];
+  constructor(public themeStore: ThemeStore) {}
+  toggleTheme() {
+    this.themeStore.toggleTheme();
+  }
 }
