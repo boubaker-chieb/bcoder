@@ -51,6 +51,7 @@ nav {
   backdrop-filter: blur(18px);
   transition: background-color 0.25s, box-shadow 0.25s;
   z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 nav.scrolled {
