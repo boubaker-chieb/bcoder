@@ -9,9 +9,11 @@ import { ThemeStore } from '../stores/theme-store';
   styleUrl: './header.scss',
 })
 export class Header {
-  public navItems: { label: string; page?: string; link?: string; icon?: string }[] = [
-    { label: 'Home', page: '/', icon: '/public/svgs/home-icon.svg' },
-    { label: 'Contact', page: '/contact', icon: '/public/svgs/contact-icon.svg' },
+  public navItems: { label: string; page?: string; link?: string; }[] = [
+    { label: 'Home', page: '/' },
+    { label: 'Contact', page: '/contact' },
+    { label: 'Blog', page: '/blog' },
+    { label: 'Projects', page: '/projects' }
   ];
   constructor(public themeStore: ThemeStore) {}
   toggleTheme() {

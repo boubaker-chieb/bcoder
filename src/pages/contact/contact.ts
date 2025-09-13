@@ -24,5 +24,10 @@ export class Contact {
     alt: 'envelope icon',
     link: 'mailto:boubaker.ch@outlook.fr',
   },
+  {
+    icon: 'by-me-coffee-icon',
+    alt: 'by me coffee icon',
+    link: 'https://www.buymeacoffee.com/boubakerchieb',
+  },
 ]
 }
