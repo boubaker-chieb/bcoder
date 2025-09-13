@@ -1,0 +1,20 @@
+
+.download-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  background: var(--yellow-1);
+  padding: 0.5em 1.2em;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px var(--accents-4);
+  transition: background 0.2s, transform 0.2s;
+  margin-top: var(--gap);
+
+  &:hover {
+    background: var(--bleu-1);
+    transform: scale(1.05);
+    opacity: 0.95;
+    color: white
+  }
+}

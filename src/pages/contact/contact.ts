@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Logo } from '../../core/logo/logo';
+import { PageTitle } from '../../core/pageTitle/pageTitle';
 
 @Component({
   selector: 'app-contact',
-  imports: [Logo],
+  imports: [PageTitle],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })
@@ -23,6 +23,11 @@ export class Contact {
     icon: 'envelope-icon',
     alt: 'envelope icon',
     link: 'mailto:boubaker.ch@outlook.fr',
+  },
+  {
+    icon: 'by-me-coffee-icon',
+    alt: 'by me coffee icon',
+    link: 'https://www.buymeacoffee.com/boubakerchieb',
   },
 ]
 }
