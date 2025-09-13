@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PageTitle } from '../../core/pageTitle/pageTitle';
+import { PageTitle } from '../../shared/pageTitle/pageTitle';
 
 @Component({
   selector: 'app-contact',

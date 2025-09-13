@@ -11,7 +11,10 @@
         />
       </a>
     </div>
-    <div class="nav-links">
+    <button class="nav-toggle" (click)="isNavOpen.set(!isNavOpen())" aria-label="Toggle navigation">
+      <span> @if(isNavOpen()) { &times; } @else { &#9776; } </span>
+    </button>
+    <div class="nav-links" [class.open]="isNavOpen()">
       <ul>
         @for (navItem of navItems; track navItem.label) {
         <li>
@@ -20,6 +23,7 @@
             [routerLinkActiveOptions]="{ exact: true }"
             [href]="navItem.link"
             routerLinkActive="active"
+            (click)="isNavOpen.set(false)"
           >
             {{ navItem.label }}
           </a>

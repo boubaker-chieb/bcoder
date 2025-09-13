@@ -64,3 +64,45 @@ nav.scrolled {
 .theme-toggle:hover {
   transform: scale(1.2) rotate(-10deg);
 }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+  color: var(--accents-3);
+}
+
+.nav-toggle span {
+  transition: transform 0.3s;
+}
+
+.nav-toggle span.open {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: var(--header-bg, #fff);
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    z-index: 100;
+    ul > li {
+      display: block;
+      padding: 0.7rem 0.5rem;
+    }
+  }
+  .nav-links.open {
+    display: block;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}
