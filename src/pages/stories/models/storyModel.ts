@@ -4,9 +4,10 @@ export interface StoryModel {
     title: string;
     content: string;
     tags: string[];
-    image: string;
+    imageBase64: string;
     createdAt: Date;
     updatedAt?: Date;
     likes?: number;
     views?: number;
+    contentType?: string; // e.g., 'image/png', 'image/jpeg'
 }

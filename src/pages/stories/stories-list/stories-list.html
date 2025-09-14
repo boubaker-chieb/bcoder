@@ -1,8 +1,7 @@
- <div class="stories-grid">
-@for (story of stories(); track $index) {
-<app-story-list-item [story]="story"></app-story-list-item>
-} @empty {
-<p>No stories available at the moment. Please check back later!</p>
-}
+<div class="stories-grid">
+  @for (story of stories(); track $index) {
+  <app-story-list-item [story]="story"></app-story-list-item>
+  } @empty {
+  <p>No stories available at the moment. Please check back later!</p>
+  }
 </div>
-

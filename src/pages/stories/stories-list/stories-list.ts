@@ -1,6 +1,6 @@
-import { Component, signal, WritableSignal } from '@angular/core';
+import { Component, inject} from '@angular/core';
 import { StoryListItem } from '../story-list-item/story-list-item';
-import { StoryModel } from '../models/storyModel';
+import { StoriesService } from '../services/stories-service';
 
 @Component({
   selector: 'app-stories-list',
@@ -10,7 +10,6 @@ import { StoryModel } from '../models/storyModel';
   
 })
 export class StoriesList {
-  public stories : WritableSignal<StoryModel[]> = signal([
-  
-  ]);
+  private storiesService = inject(StoriesService);
+  stories = this.storiesService.stories;
 }

@@ -12,7 +12,7 @@ export class Header {
   public isNavOpen: WritableSignal<boolean> = signal(false);
   public navItems: { label: string; page?: string; link?: string; }[] = [
     { label: 'Home', page: '/' },
-    { label: 'Stories', page: '/stories' },
+    // { label: 'Stories', page: '/stories' },
     { label: 'Contact', page: '/contact' },
   ];
   constructor(public themeStore: ThemeStore) {}
