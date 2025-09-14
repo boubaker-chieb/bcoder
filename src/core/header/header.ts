@@ -9,11 +9,11 @@ import { ThemeStore } from '../stores/theme-store';
   styleUrl: './header.scss',
 })
 export class Header {
+  public isNavOpen: WritableSignal<boolean> = signal(false);
   public navItems: { label: string; page?: string; link?: string; }[] = [
     { label: 'Home', page: '/' },
+    // { label: 'Stories', page: '/stories' },
     { label: 'Contact', page: '/contact' },
-    { label: 'Blog', page: '/blog' },
-    { label: 'Projects', page: '/projects' }
   ];
   constructor(public themeStore: ThemeStore) {}
   toggleTheme() {

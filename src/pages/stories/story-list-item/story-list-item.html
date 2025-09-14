@@ -1,0 +1,16 @@
+<a [routerLink]="['/stories', story.id]">
+  <div class="story-card">
+    <div class="story-header">
+      @for (tag of story.tags; track $index) {
+      <span class="story-tag">#{{ tag }}</span>
+      }
+    </div>
+    <img class="story-card-img" [src]="toDataUrl(story)" alt="Story Image" />
+    <div class="story-footer">
+      <span class="story-footer-item"> {{ story.title }} </span>
+      <span class="story-footer-item">
+        {{ story.views ?? 0 }} Views {{ story.likes ?? 0 }} Likes
+      </span>
+    </div>
+  </div>
+</a>
