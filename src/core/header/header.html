@@ -18,7 +18,17 @@
       <ul>
         @for (navItem of navItems; track navItem.label) {
         <li>
-          <a
+          @if (navItem.isExternal) {
+            <a
+              [href]="navItem.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              (click)="isNavOpen.set(false)"
+              >{{ navItem.label }}</a
+            >
+            <app-icon url="/public/svgs/externallink-icon.svg"></app-icon>
+          } @else {
+            <a
             [routerLink]="navItem.page"
             [routerLinkActiveOptions]="{ exact: true }"
             [href]="navItem.link"
@@ -27,6 +37,7 @@
           >
             {{ navItem.label }}
           </a>
+          }
         </li>
         }
       </ul>

@@ -7,6 +7,6 @@ import { Story } from '../pages/stories/story/story';
 export const routes: Routes = [
     { path: '', component: Home },
     { path: 'contact', component: Contact },
-    // { path: 'stories', component: Stories },
-    // { path: 'stories/:id', component: Story },
+    { path: 'stories', component: Stories },
+    { path: 'stories/:id', component: Story },
 ];
