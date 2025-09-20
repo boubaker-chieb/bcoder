@@ -10,9 +10,9 @@ import { PageTitle } from '../../shared/pageTitle/pageTitle';
 export class Contact {
   public contacts = [
   {
-    icon: 'github-icon',
-    alt: 'github icon',
-    link: 'https://github.com/boubaker-chieb',
+    icon: 'whatsapp-icon',
+    alt: 'whatsapp icon',
+    link: 'https://wa.me/33616805191',
   },
   {
     icon: 'linkedin-icon',
